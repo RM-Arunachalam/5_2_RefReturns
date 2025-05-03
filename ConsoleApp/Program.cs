@@ -6,6 +6,8 @@ namespace Main
     {
         public static void Main(string[] args)
         {
+            //ref returns-useful in directly manipulating the variable rather than working with a copy
+
             Student bob = new Student();
             System.Console.WriteLine("before modification:" + bob.GetGrade());//2
             ref int g=ref bob.GetGradeRef();
